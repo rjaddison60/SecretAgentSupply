@@ -7,7 +7,7 @@ body {
 
 }
 
-@media only and (max-width 768px) {
+@media only screen and (max-width: 1024px) {
     body {
         font-size: 16px;
     }
@@ -26,7 +26,7 @@ h1, h4 {
 }
 
 .container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -51,10 +51,17 @@ header span {
 }
 
 .banner  {
-  display: flex;
   background-image: url("../images/moto.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 25rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+      height: 15rem;
+    }
 }
 
 .arrival {
@@ -78,6 +85,27 @@ header span {
   margin: 0.25rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .arrival {
+      top: 10rem;
+      padding: 1rem 0 1rem 2rem;
+      width: 100%;
+    }
+    .arrival h1 {
+      font-family: Helvetica;
+      color: White;
+      font-size: 1rem;
+    }
+
+    .arrival h4 {
+      font-family: Helvetica;
+      color: White;
+      margin: 0.25rem;
+      font-size: 0.77rem;
+    }
+}
+
+
 nav {
   background-color: Firebrick;
   color: White;
@@ -100,7 +128,9 @@ nav ul {
   }
   .mobile {
     display: block;
-    padding: 0.75rem;
+    text-align: center;
+  }
+  li {
     text-align: center;
   }
 }
@@ -123,6 +153,16 @@ nav ul {
     width: 47%;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .watch {
+    display: none;
+  }
+  .item {
+    width: 90%;
+  }
+}
+
 
 .item-image {
   display: flex;
@@ -164,8 +204,24 @@ nav ul {
   width: 35%;
 }
 
+@media only screen and (max-width: 768px) {
+  .information {
+    display: block;
+  }
+  .info {
+    padding-top: 0.5rem;
+    width: 90%;
+  }
+}
+
 .footer {
   padding-top: 4rem;
   height: 5rem;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
 }
