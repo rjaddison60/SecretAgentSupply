@@ -7,6 +7,12 @@ body {
 
 }
 
+@media only and (max-width 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
 header {
   background-color: black;
 }
@@ -84,6 +90,21 @@ nav ul {
   align-items: center;
 }
 
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+  }
+}
+
 .items {
   display: flex;
   padding-top: 3rem;
@@ -92,6 +113,15 @@ nav ul {
 
 .item {
   width: 30%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .glasses {
+    display: none;
+  }
+  .item {
+    width: 47%;
+  }
 }
 
 .item-image {
