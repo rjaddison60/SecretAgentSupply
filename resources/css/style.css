@@ -88,20 +88,20 @@ header span {
 @media only screen and (max-width: 768px) {
     .arrival {
       top: 10rem;
-      padding: 1rem 0 1rem 2rem;
+      padding: 1rem 0;
       width: 100%;
     }
     .arrival h1 {
       font-family: Helvetica;
       color: White;
       font-size: 1rem;
+      margin-left: 2rem;
     }
-
     .arrival h4 {
       font-family: Helvetica;
       color: White;
-      margin: 0.25rem;
       font-size: 0.77rem;
+      margin-left: 2rem;
     }
 }
 
